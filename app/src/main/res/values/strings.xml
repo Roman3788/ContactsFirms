@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ContactsFirms</string>
+
+    <string name="hint_surname">Фамилия</string>
+    <string name="hint_name">Имя</string>
+    <string name="hint_otchestvo">Отчество</string>
+    <string name="hint_phone">Телефон (без 8)</string>
+
+    <string name="bt_save_text">Добавить</string>
+    <string name="bt_add_contact">Добавить пользователя</string>
+
+    <string name="textView_AllUsers">Users</string>
+    <string name="textView_UsersIzbrannoe">Favorite users</string>
+
+    <string name="error_surname">Введите фамилию</string>
+    <string name="error_name">Введите имя</string>
+
+    <string name="izbrannoe">Избранное</string>
+
+</resources>

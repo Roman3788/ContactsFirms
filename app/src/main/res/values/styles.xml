@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+        <style name="TextStyle_EditActivity_form">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">normal</item>
+            <item name="android:textSize">15sp</item>
+            <item name="android:letterSpacing">0.01</item>
+
+        </style>
+        <style name="TextStyle_EditActivity">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">normal</item>
+            <item name="android:textSize">15sp</item>
+            <item name="android:letterSpacing">0.01</item>
+            <item name="android:lineSpacingExtra">4.5sp</item>
+            <item name="android:textColor">#DEFFFFFF</item>
+        </style>
+        <style name="TextStyle3">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">normal</item>
+            <item name="android:textSize">13sp</item>
+            <item name="android:letterSpacing">0.02</item>
+            <item name="android:textColor">#de000000</item>
+        </style>
+        <style name="TextStyle2">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">normal</item>
+            <item name="android:textSize">13sp</item>
+            <item name="android:letterSpacing">0.01</item>
+            <item name="android:lineSpacingExtra">7sp</item>
+            <item name="android:textColor">#de000000</item>
+        </style>
+        <style name="TextStyle_MainActivity_top">
+            <item name="android:fontFamily">sans-serif</item>
+            <item name="android:textStyle">normal</item>
+            <item name="android:letterSpacing">0.01</item>
+            <item name="android:lineSpacingExtra">4.5sp</item>
+
+
+        </style>
+
+
+    <style name="TextStyle_white_shadow">
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">@color/shadowColor</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textColor">#DEFFFFFF</item>
+    </style>
+
+
+</resources>

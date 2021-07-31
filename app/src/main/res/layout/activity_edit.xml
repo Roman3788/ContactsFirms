@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <LinearLayout
+        android:id="@+id/Panel_navigation"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/bt_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bt_back" />
+
+        <TextView
+            android:id="@+id/textView_h1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="@color/shadowColor"
+            android:shadowRadius="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextStyle_EditActivity"
+            android:gravity="center"
+            android:layout_gravity="center"
+             />
+
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_marginTop="40dp"
+    android:padding="10dp"
+    android:layout_marginBottom="60dp"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        style="@style/TextStyle_EditActivity_form"
+        android:id="@+id/edit_surname"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:inputType="textPersonName|textCapWords"
+        android:singleLine="true"
+        android:hint="@string/hint_surname"
+        android:textColorHint="@color/color_hint"
+        />
+
+    <TextView
+        android:id="@+id/textView_error_surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit_surname"
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@android:color/holo_red_light"
+        android:text="@string/error_surname"/>
+
+    <EditText
+        android:id="@+id/edit_name"
+        style="@style/TextStyle_EditActivity_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@+id/textView_error_surname"
+        android:textColorHint="@color/color_hint"
+        android:hint="@string/hint_name"
+        />
+
+    <TextView
+        android:id="@+id/textView_error_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit_name"
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@android:color/holo_red_light"
+        android:text="@string/error_name"/>
+
+    <EditText
+        android:id="@+id/edit_otchestvo"
+        style="@style/TextStyle_EditActivity_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@+id/textView_error_name"
+        android:textColorHint="@color/color_hint"
+        android:hint="@string/hint_otchestvo"
+        />
+     <com.santalu.maskedittext.MaskEditText
+        android:id="@+id/edit_phone"
+        style="@style/TextStyle_EditActivity_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/edit_otchestvo"
+        android:textColorHint="@color/color_hint"
+        android:hint="@string/hint_phone"
+        app:met_mask="+7(###) ###-##-##" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#F83BA889"
+        style="@style/TextStyle_white_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/bt_save_text"
+        android:textAllCaps="false"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

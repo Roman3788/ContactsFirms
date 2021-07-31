@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorE6E6E6">#A9F18E</color>
+    <color name="color_izbrannoe">#FDF6E651</color>
+    <color name="color_izbrannoe_top">#E1D60E</color>
+    <color name="color_text_users_usersFavorite">#FDFFFFFF</color>
+    <color name="color_hint">#FD9E9D9D</color>
+    <color name="shadowColor">#000000</color>
+
+</resources>
